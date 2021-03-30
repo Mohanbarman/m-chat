@@ -19,3 +19,30 @@ export const useRootStyles = makeStyles((theme) => ({
     width: '100%',
   },
 }));
+
+export const useDialogStyles = makeStyles((theme) => ({
+  container: {
+    padding: '30px',
+  }
+}))
+
+export const useMessageStyles = makeStyles((theme) => ({
+  container: {
+    padding: '20px',
+    borderRadius: '10px',
+    backgroundColor: '#f3f3f3',
+  },
+  otherMessage: {
+    alignSelf: 'flex-start',
+    backgroundColor: '#e7ebff',
+  },
+  messagesContainer: {
+      maxHeight:"90vh",
+      overflow:"auto",
+      display: "flex",
+      flexDirection: "column",
+      gridGap: "10px",
+      padding: "30px 0",
+      alignItems: "flex-end",
+  }
+}))

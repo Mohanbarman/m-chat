@@ -1,10 +1,10 @@
 type SocketContextType = {
-    socket: WebSocket;
+    socket: Socket<DefaultEventsMap, DefaultEventsMap>;
     sendMessage: (message: messageType) => void;
 }
 
 type messageType = {
-    user: string;
+    user: UserType;
     message: string;
 }
 
@@ -15,5 +15,5 @@ type UserType = {
 
 type UserContextType = {
     user: UserType;
-    setUser: React.Dispatch<React.SetStateAction<UserType | undefined>>;
+    updateUser: (user: UserType) => void;
 }

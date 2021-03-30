@@ -16,11 +16,15 @@ export default function UserProvider(props: any) {
     if (user) localStorage.setItem("user", JSON.stringify(user));
   }, [user]);
 
+  function updateUser(user: UserType) {
+    setUser(user);
+  }
+
   return (
     <UserContext.Provider
       value={{
         user,
-        setUser,
+        updateUser
       }}
       {...props}
     />
