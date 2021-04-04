@@ -1,4 +1,4 @@
-import { MessageInterface } from '../models/message';
+import { MessageInterface } from '../type';
 
 let messages: MessageInterface[] = [];
 
