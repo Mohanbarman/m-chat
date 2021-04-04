@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { TextField, Button, Dialog, DialogTitle, Box } from "@material-ui/core";
-import { UserContext } from "../context/userContext";
+import { UserContext } from "../providers/userProvider";
 
 
 export default function UserInputDialog() {

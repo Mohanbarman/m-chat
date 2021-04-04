@@ -2,7 +2,7 @@ import { useContext, useEffect, useRef } from "react";
 import { Typography } from "@material-ui/core";
 import { useMessageStyles } from "../styles/styles";
 import clsx from "clsx";
-import { UserContext } from "../context/userContext";
+import { UserContext } from "../providers/userProvider";
 
 interface MessagesProps {
   messages: messageType[];

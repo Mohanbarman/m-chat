@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from "react";
-import { SocketContext } from "./context/socketContext";
+import { SocketContext } from "./providers/socketProvider";
 import { useRootStyles } from "./styles/styles";
 import MessageInput from "./components/messageInput";
 import { Box } from "@material-ui/core";
-import { UserContext } from "./context/userContext";
+import { UserContext } from "./providers/userProvider";
 import UserInputDialog from "./components/userInputDialog";
 import Messages from "./components/messages";
 
